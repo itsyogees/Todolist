@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div id="list">
+        <h2>Todo List</h2>
+        <input type="text" id="input">
+        <button id="add">Add</button>
+        <div id="todoList">
+            
+        </div>
+    </div>
+    <script src="todo.js"></script>
+    <script>
+
+
+        //call method
+
+        let obj1 = {
+            num:5,
+           
+        }
+     let  obj2={
+
+      fan : function(a,b){
+                console.log(this.num*a+b);
+            }
+        }
+        obj2.fan.call(obj1,4,"hello" +"world")
+
+
+        //apply method
+        //with squar broket and array
+
+        let obj3 ={
+            no : 10,
+        }
+        let obj4={
+               f1:function(c,d){
+                console.log(this.no*c+d);
+            }
+        }
+        // includes array value
+       // let arr=[2,"hello" + "world"]
+    //    var r= obj4.f1.bind(obj3,[2,"hello" + "world"]);
+    //    r ();
+
+        //bind method it will creat a function
+// fetch('https://official-joke-api.appspot.com/random_joke')
+// .then((res)=>console.log(res.json()))
+// .then((msg)=>console.log(msg.setup,msg.punchline)) 
+
+// fetch('https://official-joke-api.appspot.com/random_joke');
+// .then((res))
+    </script>
+</body>
+</html>
